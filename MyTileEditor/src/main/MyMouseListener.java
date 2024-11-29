@@ -26,7 +26,7 @@ public class MyMouseListener implements MouseListener{
 		int mouseX = e.getX();
 		int mouseY = e.getY();
 
-		// Calculate the mouse position in the world
+	// Calculate the mouse position in the world
 		int worldMouseX = mouseX + gp.camera.worldX - gp.camera.screenX;
 		int worldMouseY = mouseY + gp.camera.worldY - gp.camera.screenY;
 

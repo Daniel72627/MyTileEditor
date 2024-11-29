@@ -14,7 +14,7 @@ import main.Panel;
 public class TileManager {
 	
 	Panel gp;
-	Tile[] tile;
+	public Tile[] tile;
 	public int mapTileNum[][];
 	
 	public TileManager(Panel gp) {

@@ -28,6 +28,7 @@ public class Panel extends JPanel implements Runnable{
 	MyMouseListener MouseListener = new MyMouseListener(this);
 	KeyHandler keyH = new KeyHandler();
 	public Camera camera = new Camera(this, keyH);
+	UIManager uiM = new UIManager(this);
 	
 	public final int maxWorldCol = 50;
 	public final int maxWorldRow = 50;
@@ -64,7 +65,6 @@ public class Panel extends JPanel implements Runnable{
 			
 			repaint();
 			
-			
 			try {
 				
 				double remainingTime = nextDrawTime - System.nanoTime();
@@ -99,6 +99,7 @@ public class Panel extends JPanel implements Runnable{
 		
 		tileM.draw(g2);
 		camera.draw(g2);
+		uiM.draw(g2);
 		
 		g2.dispose();
 		
